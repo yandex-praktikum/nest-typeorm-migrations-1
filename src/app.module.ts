@@ -15,7 +15,7 @@ import { Rating } from './rating/rating.entity';
       username: 'postgres',
       password: '',
       database: 'nest-course',
-      migrations: ['src/database/migrations/*.ts'],
+      migrations: [__dirname + '/database/migrations/**/*{.ts,.js}'],
       entities: [User, Course, Rating],
       synchronize: true,
     }),
