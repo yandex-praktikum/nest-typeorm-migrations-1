@@ -8,6 +8,6 @@ export const AppDataSource = new DataSource({
   password: 'student',
   database: 'nest_project',
   entities: [__dirname + '/**/**/*.entity{.ts,.js}'],
-  migrations: [__dirname + '/database/migrations/**/*{.ts,.js}'],
+  migrations: [__dirname + '/src/database/migrations/**/*{.ts,.js}'],
   synchronize: false,
 });

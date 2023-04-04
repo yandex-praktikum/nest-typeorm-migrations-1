@@ -6,7 +6,10 @@ export class User {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @Column({
+    // ограничение на длину имени
+    length: 10,
+  })
   name: string;
 
   @OneToMany(() => Rating, (rating) => rating.user)
